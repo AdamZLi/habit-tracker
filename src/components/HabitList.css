@@ -1,0 +1,209 @@
+.habit-list {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 0 0 350px;
+  min-width: 0;
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+.habit-list h2 {
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.habit-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.habit-input-group {
+  flex: 1;
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.habit-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.icon-picker-button {
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 50px;
+  max-width: 50px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.icon-picker-button:hover {
+  background: #e9ecef;
+  border-color: #667eea;
+}
+
+.icon-picker {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 0.5rem;
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0.6rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.icon-picker-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.35rem;
+  width: 100%;
+}
+
+.icon-option {
+  background: #f8f9fa;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 0.35rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.icon-option:hover {
+  background: #e9ecef;
+  border-color: #667eea;
+  transform: scale(1.1);
+}
+
+.icon-option.selected {
+  background: #667eea;
+  border-color: #5568d3;
+  transform: scale(1.1);
+}
+
+.habit-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.add-button {
+  padding: 0.75rem 1.5rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  flex-shrink: 0;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.add-button:hover {
+  background: #5568d3;
+}
+
+.add-button:active {
+  transform: scale(0.98);
+}
+
+.habits {
+  list-style: none;
+}
+
+.habit-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.habit-item:hover {
+  background: #e9ecef;
+}
+
+.habit-item span {
+  flex: 1;
+  color: #333;
+  font-size: 1rem;
+}
+
+.habit-item-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.delete-button {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-button:hover {
+  background: #ee5a5a;
+}
+
+.delete-button:active {
+  transform: scale(0.95);
+}
+
+.empty-message {
+  padding: 1rem;
+  text-align: center;
+  color: #999;
+  font-style: italic;
+}
+
